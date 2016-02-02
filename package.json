@@ -1,0 +1,30 @@
+{
+  "name": "with-process-env",
+  "version": "1.0.0",
+  "description": "Runs a function with certain process.env variables set",
+  "homepage": "https://github.com/beardon/with-process-env",
+  "bugs": {
+    "url": "https://github.com/beardon/with-process-env/issues",
+    "email": "tyson@beardon.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beardon/with-process-env.git"
+  },
+  "author": "Tyson Cleary <tyson@beardon.com> (https://github.com/tyscorp)",
+  "license": "BSD",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "core-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "mocha test"
+  }
+}
