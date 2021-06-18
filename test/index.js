@@ -1,13 +1,13 @@
-var expect = require('chai').expect;
+const expect = require('chai').expect;
 
-var withProcessEnv = require('../index');
+const withProcessEnv = require('../index');
 
 describe('withProcessEnv', () => {
-    var LOL = 'LOL';
-    var KEK = 'KEK';
-    var LEL = 'LEL';
-    var withLolLol = withProcessEnv(LOL, LOL);
-    var withLelKek = withProcessEnv(LEL, KEK);
+    const LOL = 'LOL';
+    const KEK = 'KEK';
+    const LEL = 'LEL';
+    const withLolLol = withProcessEnv(LOL, LOL);
+    const withLelKek = withProcessEnv(LEL, KEK);
 
     describe('undefined environment variables', function () {
         it('should do the thing', function () {

@@ -1,9 +1,8 @@
-var deleteProperty = require('core-js/library/fn/reflect/delete-property');
+const deleteProperty = require('core-js/library/fn/reflect/delete-property');
 
 module.exports = function withProcessEnv(name, value) {
     return function (fn) {
-        var old;
-        var retVal;
+        let old;
 
         // check to make sure process actually exists
         if (typeof process === 'undefined' || typeof process.env === 'undefined') {
@@ -15,7 +14,7 @@ module.exports = function withProcessEnv(name, value) {
         }
 
         // if the variable wasn't previously we need to remember to delete it later
-        var wasDefined = name in process.env;
+        const wasDefined = name in process.env;
 
         try {
             old = process.env[name];
@@ -29,7 +28,7 @@ module.exports = function withProcessEnv(name, value) {
             return fn(new Error('Unable to modify process env variable'));
         }
 
-        var retVal = fn();
+        const retVal = fn();
 
         if (wasDefined) {
             process.env[name] = old;
