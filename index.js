@@ -1,5 +1,3 @@
-const deleteProperty = require('core-js/library/fn/reflect/delete-property');
-
 module.exports = function withProcessEnv(name, value) {
     return function (fn) {
         let old;
@@ -34,7 +32,7 @@ module.exports = function withProcessEnv(name, value) {
             process.env[name] = old;
         }
         else {
-            deleteProperty(process.env, name);
+            Reflect.deleteProperty(process.env, name);
         }
 
         return retVal;

@@ -1,6 +1,6 @@
 {
   "name": "with-process-env",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Runs a function with certain process.env variables set",
   "homepage": "https://github.com/beardon/with-process-env",
   "bugs": {
@@ -16,18 +16,5 @@
     "Aaron Bean <aaron.bean@beardon.com> (https://beardon.com)"
   ],
   "license": "BSD",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "core-js": "^3.14.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^9.0.1"
-  },
-  "scripts": {
-    "test": "mocha test"
-  }
+  "main": "index.js"
 }
